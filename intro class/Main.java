@@ -22,6 +22,17 @@ class Human{
         System.out.println("Inside the constructor - Creating Object");
     }
 
+    // parameterized constructor
+    public Human(int age, int weight){
+        this.age = age;
+        this.weight = weight;
+    }
+
+    // constructor Overloading
+    public Human(float age){
+        System.out.println("constructor overloading concept");
+    }
+
     // behaviour
     void sleep(){
         System.out.println("Bhaiya is sleeping");
