@@ -2,6 +2,17 @@ import java.io.*;
 import java.util.*;
 
 class Main {
+
+    static class Point {
+        int x;
+        int y;
+    }
+
+    static class Rectangle {
+        Point tl;
+        Point br;
+    }
+
     static class Person {
         int age;
         String name;
@@ -27,5 +38,15 @@ class Main {
         p2.name = "C";
         p2.sayHi();
         p3.sayHi();
+
+        // heep can also store references
+        Rectangle r = new Rectangle(); // instance, ref
+        r.tl = new Point(); // instance, reference
+        r.tl.x = 2;
+        r.tl.y = 6;
+
+        r.br = new Point(); // inst, ref
+        r.br.x = 6;
+        r.br.y = 1;
     }
 }
