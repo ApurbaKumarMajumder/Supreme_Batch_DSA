@@ -16,3 +16,9 @@ Reference holds the address of an object or instance. Whenever we want to call i
 # Differences b/w Instance Variable and Reference Variables?
 
 ![image](https://drive.google.com/file/d/1DPC0AHlihSxtW2yJVSrv9edjnmevNrn6/view?usp=sharing)
+
+# What are static functions?
+
+Such functions which donot require object for their invocation (are invoked directly via class name).
+
+uses: Utility stateless functions.

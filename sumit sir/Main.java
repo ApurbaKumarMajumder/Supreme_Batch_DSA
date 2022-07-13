@@ -74,7 +74,9 @@ class Main {
         BankAccount a1 = new BankAccount();
         a1.anum = 10;
         a1.money = 100;
-        a1.roi = 4;
+        a1.roi = 4;  // this is a bad practice
+        // static data members should be modified using class and not object
+        // because static data member belong to class & not the object individually
 
         a1.announce();
 
