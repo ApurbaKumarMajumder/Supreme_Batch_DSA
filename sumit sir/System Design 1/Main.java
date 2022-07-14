@@ -30,6 +30,16 @@ class Main {
         void announce(){
             System.out.println(this.anum + ", " + this.money + ", " + this.roi);
         }
+
+        static void decreaseROI(){
+            roi--;
+            //anum and money can't be used
+            // announce();  // not allowed
+
+            // what is allowed
+            BankAccount a = new BankAccount();
+            a.announce();
+        }
     }
 
     public static void main(String[] args) {

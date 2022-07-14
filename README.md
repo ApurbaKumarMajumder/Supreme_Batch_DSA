@@ -46,3 +46,7 @@ Stateless -> Nothing is saved between two functions calls, each call is independ
 * Can non-static fn, use static fn?
 
     Yes, because we have extra information available (not less)
+
+
+1. Compiler watches LHS i.e. reference.
+2. Ryntime watches RHS i.e. instances.
