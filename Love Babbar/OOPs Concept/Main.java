@@ -100,3 +100,20 @@ class Car {
         System.out.println("car is breaking");
     }
 }
+
+class Dog extends Animal {
+
+    @Override
+    void speak() {
+        System.out.println("Main toh woof karega");
+    }
+}
+
+class Animal {
+    int age;
+    int weight;
+
+    void speak() {
+        System.out.println("Haaye ");
+    }
+}
