@@ -68,6 +68,19 @@ class Human {
     }
 }
 
+class Scorpio extends Mahindra{
+    String color;
+
+}
+
+class Mahindra extends Car {
+    int rating;
+
+    void intro() {
+        System.out.println("This is Mahindra");
+    }
+}
+
 class Car {
     String color;
     int weight;
