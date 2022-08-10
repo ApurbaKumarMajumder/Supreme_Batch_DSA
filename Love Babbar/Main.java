@@ -23,10 +23,6 @@ public class Main {
     }
 }
 
-class Male extends Human{
-
-}
-
 
 class Human {
     //data member
@@ -70,5 +66,24 @@ class Human {
     static void update() {
         //count++;
     }
+}
 
+class Car {
+    String color;
+    int weight;
+
+    void runCar() {
+        System.out.println("car is running");
+    }
+    int runCar(int a, int b) {
+        System.out.println("car is running");
+        return 0;
+    }
+    void runCar(int speed) {
+        System.out.println("car is running at speed " + speed );
+    }
+
+    void breakCar() {
+        System.out.println("car is breaking");
+    }
 }
