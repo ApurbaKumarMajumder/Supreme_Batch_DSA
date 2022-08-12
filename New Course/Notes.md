@@ -19,3 +19,36 @@ An objeect represents an individial, identifiable item, unit or entity, either r
     - a class is the blueprint for objects.
 * Forms the building block of an application.
 
+# State
+
+* Properties and their values constitute the state of an object.
+* Appear as attributes of an object
+    - fields
+    - member variables
+* Can be of two types
+    - static - fundamental attributes that don't change
+    - dynamic - attributes that change as a result of operation performed on the object.
+
+# Identity
+
+* Trait that makes an object unique and gives it individuality.
+* Represented through one or mmoree attributes of the object.
+    - address of an object can be used to represent its identity in some cases
+* Helps identify objects in a system
+* Examples:
+    - Speak System - Series no.
+    - Cellphone - IMEI no.
+    - Person - Social security no.
+
+# Behaviour
+
+* Response of the object during interaction
+* Part of the responsibility of an object
+* Arises due to binding between attributes and operations
+    - operations will internally change the state of the object
+    - this culminates into the behavoiur of the object
+* Appear as operations (member functions, methods)
+* Examples:
+    - speaker system - ChangeVolume, ChangeBass, ChangeTreble, EqualizeLoudness
+    - cellphone - SendText, Dial, AcceptCall, Connect
+
