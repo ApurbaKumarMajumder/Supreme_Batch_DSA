@@ -78,3 +78,35 @@ It is a method of implementation in which programs are organized as cooperative 
 * Programming is the implementation using an OO language.
 
 ---
+
+
+
+# Object Oriented Analysis
+
+* OO analysis focuses on the problem and the requirements
+* Focus on what the system is supposed to do
+* Implementation details are mostly ignored
+* An analysis model is created
+    - done through user stories or use cases
+    - involves key abstractions from the problem domain
+    - constraints of technologies are ignored
+
+# Use Case
+
+* Defines a model of a system behaviour
+* Uses natural language
+    - designers and programmers use as a common reference
+* Decomposes large system specification into small, manageable parts
+* Smaller parts are easily described, hence easily implemented
+* Models functional behaviour of the system
+
+---
+**Summary**
+
+* UML is used for object oriented analysis
+* It is a formal and standardized language
+* Used notations to describe the system
+* Use case description is used to model system behaviour
+* Uses natural language
+
+---
