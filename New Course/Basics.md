@@ -52,3 +52,15 @@ An objeect represents an individial, identifiable item, unit or entity, either r
     - speaker system - ChangeVolume, ChangeBass, ChangeTreble, EqualizeLoudness
     - cellphone - SendText, Dial, AcceptCall, Connect
 
+---
+**Symmary**
+
+* Object is an entity, real or abstract, identifiable, in some problem domain
+* Has the following characteristics
+    - state
+    - identity
+    - behaviour
+* Their blueprint is represeented by a class
+* Objects do not exist in isolation
+* Interdependent, coordinate.
+---
