@@ -135,39 +135,66 @@ int main() {
     
     // 4. Pair Sum
 
-    vector<int> arr{10, 20, 30, 40, 50, 60, 70};
-    int sum = 80;
+    // vector<int> arr{10, 20, 30, 40, 50, 60, 70};
+    // int sum = 80;
 
-    // print all pairs
-    // outer loop will traverse for each element
-    // for (size_t i = 0; i < arr.size(); i++)
-    // {
-    //     cout << "We are at element: " << arr[i] << "\n";
+    // // print all pairs
+    // // outer loop will traverse for each element
+    // // for (size_t i = 0; i < arr.size(); i++)
+    // // {
+    // //     cout << "We are at element: " << arr[i] << "\n";
+    // //     int element = arr[i];
+
+    // //     // for every element, will traverse on aage wale elements
+    // //     for (size_t j = i+1; j < arr.size(); j++)
+    // //     {
+    // //         cout << "pair " << element << " with " << arr[j] << "\n";
+    // //         // cout << "(" << element << ", " << arr[j] << ")" << "\n"; 
+    // //     }
+    // // }
+    
+    // for (size_t i = 0; i < arr.size(); i++) {
     //     int element = arr[i];
 
     //     // for every element, will traverse on aage wale elements
     //     for (size_t j = i+1; j < arr.size(); j++)
     //     {
-    //         cout << "pair " << element << " with " << arr[j] << "\n";
-    //         // cout << "(" << element << ", " << arr[j] << ")" << "\n"; 
+    //         if (element + arr[j] == sum)
+    //         {
+    //             cout << "Pair Found " << element << "," << arr[j] << "\n";
+    //         }
+            
+    //     }
+        
+    // }
+
+    // 5. Triplet pair sum
+
+    // vector<int> arr{10, 20, 30, 40, 50};
+    // int sum = 80;
+
+    // for (int i = 0; i < arr.size(); i++)
+    // {
+    //     int element = arr[i];
+
+    //     for (int j=i+1; j<arr.size(); j++) {
+    //         int element2 = arr[j];
+
+    //         for (int k=j+1; k<arr.size(); k++) {
+    //             int element3 = arr[k];
+
+    //             if (element + element2 + element3 == sum)
+    //             {
+    //                 cout << element << "," << element2 << "," << element3 << "\n";
+    //             }
+                
+    //         }
     //     }
     // }
+
+    // 6. Sort 0's & 1's
+
     
-    for (size_t i = 0; i < arr.size(); i++) {
-        int element = arr[i];
-
-        // for every element, will traverse on aage wale elements
-        for (size_t j = i+1; j < arr.size(); j++)
-        {
-            if (element + arr[j] == sum)
-            {
-                cout << "Pair Found " << element << "," << arr[j] << "\n";
-            }
-            
-        }
-        
-    }
-
     
 
     return 0;
