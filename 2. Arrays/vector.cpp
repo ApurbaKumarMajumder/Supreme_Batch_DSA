@@ -82,29 +82,77 @@ int main() {
 
     // 2. Union of 2 arrays
 
-    int arr[] = {1, 3, 5, 7, 9};
-    int sizeA = 5;
-    int arr2[] = {2, 4, 6, 8};
-    int sizeB = 4;
+    // int arr[] = {1, 3, 5, 7, 9};
+    // int sizeA = 5;
+    // int arr2[] = {2, 4, 6, 8};
+    // int sizeB = 4;
 
-    vector<int> ans;
+    // vector<int> ans;
 
-    // push all element of arr in ans
-    for (int i=0; i<sizeA; i++) {
-        ans.push_back(arr[i]);
-    } 
+    // // push all element of arr in ans
+    // for (int i=0; i<sizeA; i++) {
+    //     ans.push_back(arr[i]);
+    // } 
 
-    // push all element of arr2 in ans
-    for (int i=0; i<sizeB; i++) {
-        ans.push_back(arr2[i]);
-    }
+    // // push all element of arr2 in ans
+    // for (int i=0; i<sizeB; i++) {
+    //     ans.push_back(arr2[i]);
+    // }
 
-    // printing ans
-    cout << "Printing ans array " << "\n";
-    for (size_t i = 0; i < ans.size(); i++)
+    // // printing ans
+    // cout << "Printing ans array " << "\n";
+    // for (size_t i = 0; i < ans.size(); i++)
+    // {
+    //     cout << ans[i] << " ";
+    // }
+
+    // 3. Intersection of 2 Arrays
+
+    // vector<int> arr{1, 2, 3, 4, 6, 8};
+    // vector<int> arr2{3, 49, 10};
+
+    // vector<int> ans;
+
+    // // outer loop on arr vector
+    // for (int i=0; i<arr.size(); i++) {
+    //     int element = arr[i];
+    //     // for every element, run loop on arr2
+    //     for (int j=0; j<arr2.size(); j++) {
+    //         if (element == arr2[j]) {
+    //             // mark the checked element
+    //             arr2[j] = INT_MIN;
+    //             ans.push_back(element);
+    //         }
+    //     }
+    // }
+
+    // // print ans
+    // for (auto value: ans)
+    // {
+    //     cout << value << " ";
+    // }
+    // cout << "\n";
+    
+    // 4. Pair Sum
+
+    vector<int> arr{10, 20, 30, 40, 50, 60, 70};
+
+    // print all pairs
+    // outer loop will traverse for each element
+    for (size_t i = 0; i < arr.size(); i++)
     {
-        cout << ans[i] << " ";
+        cout << "We are at element: " << arr[i] << "\n";
+        int element = arr[i];
+
+        // for every element, will traverse on aage wale elements
+        for (size_t j = i+1; j < arr.size(); j++)
+        {
+            cout << "pair " << element << " with " << arr[j] << "\n";
+            // cout << "(" << element << ", " << arr[j] << ")" << "\n"; 
+        }
     }
+    
+    
 
     return 0;
 }
