@@ -14,7 +14,22 @@ void printRowWiseSum (int arr[][3], int rows, int cols) {
         }
         cout << sum << "\n";
     }
-    cout << sum << "\n";
+}
+
+bool findKey (int arr[][3], int rows, int cols, int key) {
+    for (size_t i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++) 
+        {
+            if (arr[i][j] == key)
+            {
+                return true;
+            }
+        }
+    }
+    
+    // value not found
+    return false;
 }
 
 int main() {
@@ -55,19 +70,26 @@ int main() {
     }
     */
 
-    int arr3[4][3];
+    // int arr3[4][3];
     int rows = 4;
     int cols = 3;
 
     // Input in a 2D matrix
     
-    // row-wise input
-    for (int i=0; i<rows; i++) {
-        for (size_t j = 0; j < cols; j++)
-        {
-            cin >> arr3[i][j];
-        }
-    }
+    // // row-wise input
+    // for (int i=0; i<rows; i++) {
+    //     for (size_t j = 0; j < cols; j++)
+    //     {
+    //         cin >> arr3[i][j];
+    //     }
+    // }
+
+    int arr3[4][3] = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9},
+        {10, 11, 12}
+    };
 
     cout << "printing row wise" << "\n";
     for (size_t i = 0; i < rows; i++)
@@ -79,6 +101,9 @@ int main() {
     }
 
     printRowWiseSum(arr3, rows, cols);
+
+    int key = 8;
+    cout << findKey(arr3, rows, cols, key);
     
     return 0;
 }
