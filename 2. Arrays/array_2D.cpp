@@ -1,6 +1,22 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+void printRowWiseSum (int arr[][3], int rows, int cols) {
+
+    // row sum -> row-wise traversal
+    cout << "Printing row-wise sum " << "\n";
+    for (size_t i = 0; i < rows; i++)
+    {
+        int sum = 0;
+        for (size_t j = 0; j < cols; j++)
+        {
+            sum = sum + arr[i][j];
+        }
+        cout << sum << "\n";
+    }
+    cout << sum << "\n";
+}
+
 int main() {
     /*
     // declare 2D array
@@ -57,9 +73,12 @@ int main() {
     for (size_t i = 0; i < rows; i++)
     {
         for (int j = 0; j < cols; j++) {
-            cout << arr3[i][j] << "\n";
+            cout << arr3[i][j] << " ";
         }
+        cout << "\n";
     }
+
+    printRowWiseSum(arr3, rows, cols);
     
     return 0;
 }
