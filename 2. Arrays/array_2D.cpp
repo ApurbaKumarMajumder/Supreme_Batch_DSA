@@ -2,6 +2,7 @@
 using namespace std;
 
 int main() {
+    /*
     // declare 2D array
     int arr[3][3];
 
@@ -36,7 +37,29 @@ int main() {
         }
         cout << "\n";
     }
+    */
 
+    int arr3[4][3];
+    int rows = 4;
+    int cols = 3;
 
+    // Input in a 2D matrix
+    
+    // row-wise input
+    for (int i=0; i<rows; i++) {
+        for (size_t j = 0; j < cols; j++)
+        {
+            cin >> arr3[i][j];
+        }
+    }
+
+    cout << "printing row wise" << "\n";
+    for (size_t i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++) {
+            cout << arr3[i][j] << "\n";
+        }
+    }
+    
     return 0;
 }
