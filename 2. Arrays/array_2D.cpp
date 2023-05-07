@@ -32,6 +32,34 @@ bool findKey (int arr[][3], int rows, int cols, int key) {
     return false;
 }
 
+int getMax(int arr[][3], int rows, int cols) {
+    int maxi = INT_MIN;
+    for (size_t i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++) {
+            if (arr[i][j] > maxi)
+            {
+                maxi = arr[i][j];
+            }
+        }
+    }
+    return maxi;
+}
+
+int getMin(int arr[][3], int rows, int cols) {
+    int mini = INT_MAX;
+    for (size_t i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < cols; j++) {
+            if (arr[i][j] < mini)
+            {
+                mini = arr[i][j];
+            }
+        }
+    }
+    return mini;
+}
+
 int main() {
     /*
     // declare 2D array
@@ -91,19 +119,21 @@ int main() {
         {10, 11, 12}
     };
 
-    cout << "printing row wise" << "\n";
-    for (size_t i = 0; i < rows; i++)
-    {
-        for (int j = 0; j < cols; j++) {
-            cout << arr3[i][j] << " ";
-        }
-        cout << "\n";
-    }
+    // cout << "printing row wise" << "\n";
+    // for (size_t i = 0; i < rows; i++)
+    // {
+    //     for (int j = 0; j < cols; j++) {
+    //         cout << arr3[i][j] << " ";
+    //     }
+    //     cout << "\n";
+    // }
 
-    printRowWiseSum(arr3, rows, cols);
+    // printRowWiseSum(arr3, rows, cols);
 
-    int key = 8;
-    cout << findKey(arr3, rows, cols, key);
+    // int key = 8;
+    // cout << findKey(arr3, rows, cols, key);
+
     
-    return 0;
+    
+    // return 0;
 }
