@@ -159,9 +159,10 @@ int main() {
     // int key = 8;
     // cout << findKey(arr3, rows, cols, key);
 
-    cout << "Starting Transpose " << "\n";
+    cout << "Printing Array " << "\n";
     int ans[3][3]; // transposed 2D array
     printArray(arr, 3, 3);
+    cout << "Starting Transpose " << "\n";
     transpose(arr, 3, 3, ans);
     cout << "Transpose done " << "\n";
     printArray(ans, 3, 3);
