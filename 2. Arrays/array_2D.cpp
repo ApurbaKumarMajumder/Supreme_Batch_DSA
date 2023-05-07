@@ -60,6 +60,26 @@ int getMin(int arr[][3], int rows, int cols) {
     return mini;
 }
 
+void transpose(int arr[][3], int rows, int cols, int transpose[][3]) {
+    for (size_t i = 0; i < rows; i++)
+    {
+        for (int j=0; j<cols; j++) {
+            // swap(arr[i][j], arr[j][i]);
+            transpose[j][i] = arr[i][j];
+        }
+    }
+}
+
+void printArray(int arr[][3], int rows, int cols) {
+    for (size_t i = 0; i < rows; i++)
+    {
+        for (int j=0; j<cols; j++) {
+            cout << arr[i][j] << " ";
+        }
+        cout << "\n";
+    }
+}
+
 int main() {
     /*
     // declare 2D array
@@ -112,6 +132,12 @@ int main() {
     //     }
     // }
 
+    int arr[3][3] = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };
+
     int arr3[4][3] = {
         {1, 2, 3},
         {4, 5, 6},
@@ -133,7 +159,12 @@ int main() {
     // int key = 8;
     // cout << findKey(arr3, rows, cols, key);
 
-    
+    cout << "Starting Transpose " << "\n";
+    int ans[3][3]; // transposed 2D array
+    printArray(arr, 3, 3);
+    transpose(arr, 3, 3, ans);
+    cout << "Transpose done " << "\n";
+    printArray(ans, 3, 3);
     
     // return 0;
 }
