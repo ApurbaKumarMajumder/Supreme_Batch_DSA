@@ -1,8 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
-
 int main() {
     // vector of vectors
     // vector<vector<int> > arr;
@@ -47,5 +45,4 @@ int main() {
         }
         cout << "\n";
     }
-
 }
