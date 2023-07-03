@@ -15,7 +15,7 @@ Reference holds the address of an object or instance. Whenever we want to call i
 
 # Differences b/w Instance Variable and Reference Variables?
 
-![image](https://drive.google.com/file/d/1DPC0AHlihSxtW2yJVSrv9edjnmevNrn6/view?usp=sharing)
+![](https://github.com/ApurbaKumarMajumder/Supreme_Batch_DSA/assets/65047407/7da05b9d-94dd-4de3-908f-bb83718c1803)
 
 # What are static functions?
 
