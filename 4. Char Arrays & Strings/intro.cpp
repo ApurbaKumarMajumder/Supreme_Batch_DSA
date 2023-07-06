@@ -58,6 +58,24 @@ bool checkPalindrome(char word[]) {
     return true;
 }
 
+void convertIntoUpperCase(char arr[]) {
+    int n = getLength(arr);
+
+    for (size_t i = 0; i < n; i++)
+    {
+        arr[i] = arr[i] - 'a' + 'A';
+    }
+}
+
+void convertIntoLowerCase(char arr[]) {
+    int n = getLength(arr);
+
+    for (size_t i = 0; i < n; i++)
+    {
+        arr[i] = arr[i] - 'A' + 'a';
+    }
+}
+
 int main() {
     // char name[100];
     // cout << "Enter your name " << endl;
@@ -114,8 +132,15 @@ int main() {
     // cout << "printing sentence " << endl << sentence << endl;
 
     // 4. Check Palindrome
-    char arr[100] = "hahahahahahah";
-    cout << "Palindrome check: " << checkPalindrome(arr);
+    // char arr[100] = "hahahahahahah";
+    // cout << "Palindrome check: " << checkPalindrome(arr);
+
+    // 5. convert to upper case
+    char arr[100] = "babbar";
+    convertIntoUpperCase(arr);
+    cout << arr << endl;
+    convertIntoLowerCase(arr);
+    cout << arr << endl;
 
     return 0;
 }
