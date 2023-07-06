@@ -26,6 +26,38 @@ void reverseCharArray(char name[]) {
     }
 }
 
+void replaceSpaces(char sentence[]) {
+    int i = 0;
+    int n = strlen(sentence);
+
+    for (size_t i = 0; i < n; i++)
+    {
+        if (sentence[i] == ' ')
+        {
+            sentence[i] = '@';
+        }
+    }
+}
+
+bool checkPalindrome(char word[]) {
+    int i = 0;
+    int n = strlen(word);
+    int j = n - 1;
+
+    while (i <= j)
+    {
+        if (word[i] != word[j])
+        {
+            return false;
+        }
+        else {
+            i++;
+            j--;
+        }
+    }
+    return true;
+}
+
 int main() {
     // char name[100];
     // cout << "Enter your name " << endl;
@@ -67,12 +99,23 @@ int main() {
     // cout << "length is: " << strlen(name) << endl;
 
     // 2. Reverse a String
-    char name[100];
-    cin >> name;
+    // char name[100];
+    // cin >> name;
     
-    cout << "Initially: " << name << endl;
-    reverseCharArray(name);
-    cout << "After reversal process: " << name << endl;
+    // cout << "Initially: " << name << endl;
+    // reverseCharArray(name);
+    // cout << "After reversal process: " << name << endl;
+
+    // 3. Replace Spaces 
+    // char sentence[100];
+    // cin.getline(sentence, 100);
+
+    // replaceSpaces(sentence);
+    // cout << "printing sentence " << endl << sentence << endl;
+
+    // 4. Check Palindrome
+    char arr[100] = "hahahahahahah";
+    cout << "Palindrome check: " << checkPalindrome(arr);
 
     return 0;
 }
