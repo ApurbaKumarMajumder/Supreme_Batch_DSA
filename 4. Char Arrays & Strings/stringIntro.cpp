@@ -62,13 +62,15 @@ int main() {
     //     cout << "Not Found" << endl;
     // }
 
-    string str = "This is my First Messages";
-    string word = "Babbar";
+    // string str = "This is my First Messages";
+    // string word = "Babbar";
 
-    str.replace(11, 5, "Second");
-    cout << str << endl;
+    // str.replace(11, 5, "Second");
+    // cout << str << endl;
 
-    // string str = "ABCDEFGHIJKSTMNLOPROST";
+    string str = "ABCDEFGHIJKSTMNLOPROST";
+    str.erase(10, 10);
+    cout << str;
     
     return 0;
 }
